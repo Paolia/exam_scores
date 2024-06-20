@@ -28,7 +28,7 @@
         <input type="hidden" name="理科" value="' . $_POST["理科"] . '">
         <input type="hidden" name="社会" value="' . $_POST["社会"] . '">
         <input type="hidden" name="英語" value="' . $_POST["英語"] . '">
-        <button type="submit" id="registar">送信</button>
+        <button type="submit" id="registar">登録</button>
     </form>'
         ?>
 </div>
