@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>まずは確実に課題を押さえるためのページ</title>
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- axiosライブラリの読み込み :下のものほどお勧め
+        JavaScript で HTTP 通信を行うライブラリ
+        XMLHttpRequest	生 JS / 一番昔から存在する
+        $.ajax()	jQuery / これが出てきて流行った
+        fetch	生 JS / 慣れないと分かりづらい
+        axios	React や Vue でも使われていて使い勝手が良い -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>とにかくまずやる夫：テスト成績集計</h1>
+    </header>
+    Array
+    (
+    [0] => 倉冨まりや
+    [1] => 桐原彩
+    [2] => 末松桃奈
+    )
+    <h2 id="toptitle">試験結果の記録</h2>
+    <main>
+        <select id="nameselector">
+            <option>倉冨まりや</option>
+            <option>桐原彩</option>
+            <option>末松桃奈</option>
+        </select>
+        <table>
+        </table>
+        <div id="boo"></div>
+        <script>
+            $("#nameselector").on("click", function (){
+            alert(this.value);
+            });
+        </script>
+    </main>
+    <footer>
+        <small>&copy Tamio Kuratomi e-mail: <a
+                href="mailto:tamio.kuratomi@gmail.com">tamio.kuratomi@gmail.com</a>a></a></small>
+    </footer>
+</body>
+
+</html>
